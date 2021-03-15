@@ -1,0 +1,45 @@
+.services{
+    &__block{
+        height: 360px;
+        width: 1104px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: 276px;
+        height: 180px;
+        background: #393F47;
+        border: 1px solid black;
+        text-transform: uppercase;
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url(../images/Vector.png);
+            width: 30px;
+            height: 30px;
+        }
+        &:hover{
+            background: $gold;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-image: url(../images/Vector.png);
+                background-color: #fff;
+            }
+        }
+    }
+}

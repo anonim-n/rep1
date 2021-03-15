@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1440px;
+}
+
+@import "../scss/variables";
+@import "../scss/header";
+@import "../scss/home";
+@import "../scss/services";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1{
+    color: black;
+    font-size: 50px;
+}
+.title{
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    & ::before{
+        content: '';
+        position: absolute;
+        width: 90px;
+        height: 6px;
+        
+    }
+}

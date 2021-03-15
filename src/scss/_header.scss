@@ -1,0 +1,33 @@
+.header{
+    max-width: 100%;
+    background: #2F343A;
+    padding: 27px 400px;
+    margin: 0 auto;
+    .wrapper{
+        display: flex;
+        .nav{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            color: #fff;
+            align-items: center;
+            &__address{
+                display: flex;
+                list-style: none;
+            }
+            &__menu{
+                display: flex;
+                list-style: none;
+                column-gap: 20px;
+            }
+            &__link{
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            &__item{
+                font-size: 14px;
+            }
+        }
+    }
+}
